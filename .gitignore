@@ -1,0 +1,48 @@
+.metadata
+target/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*.gz
+*~.nib
+local.properties
+.settings/
+.sonarlint/
+Servers/
+.loadpath
+.project
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# Code Recommenders
+.recommenders/
+
+# Git
+*.orig
+
+*.class
+*.prefs
+*.classpath
+*~
+.gwt/.gwt-log
+
+.idea/
+*.iml
+
+.attach_pid*
+styles.css
+styles.css.gz
+
+out/
+/FETCH_HEAD
+
+.env
