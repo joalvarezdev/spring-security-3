@@ -1,0 +1,11 @@
+INSERT INTO roles (name)
+SELECT 'ADMIN'
+    WHERE NOT EXISTS (SELECT name FROM roles WHERE name = 'ADMIN');
+
+INSERT INTO roles (name)
+SELECT 'USER'
+    WHERE NOT EXISTS (SELECT name FROM roles WHERE name = 'USER');
+
+INSERT INTO roles (name)
+SELECT 'INVITED'
+    WHERE NOT EXISTS (SELECT name FROM roles WHERE name = 'INVITED');

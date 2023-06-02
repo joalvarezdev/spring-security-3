@@ -4,7 +4,9 @@ public enum InternalCode {
 
 	BAD_REQUEST(2000, "Some fields contains errors. Please see the details section to detect the mistake."),
 	ENTITY_NOT_FOUND(2200, "Entity not found."),
-	ENTITY_ALREADY_EXISTS(2201, "Entity already exists.");
+	ENTITY_ALREADY_EXISTS(2201, "Entity already exists."),
+	ROLE_NOT_FOUND(2300, "Role not found.")
+	;
 
 	final private int code;
 	final private String message;

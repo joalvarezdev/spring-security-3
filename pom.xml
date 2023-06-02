@@ -13,7 +13,7 @@
 
     <groupId>com.joalvarez</groupId>
     <artifactId>springsecurity</artifactId>
-    <version>1.0.0</version>
+    <version>0.0.1</version>
     <name>springsecurity</name>
     <description>Una descripción</description>
 
@@ -66,6 +66,32 @@
             <artifactId>snakeyaml</artifactId>
             <version>2.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-api</artifactId>
+            <version>0.11.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-jackson</artifactId>
+            <version>0.11.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-impl</artifactId>
+            <version>0.11.2</version>
+        </dependency>
+
+<!--
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-root</artifactId>
+            <version>0.11.5</version>
+        </dependency>
+-->
 
         <!-- TEST -->
         <dependency>

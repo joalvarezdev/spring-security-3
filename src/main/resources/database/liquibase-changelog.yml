@@ -1,19 +1,37 @@
 databaseChangeLog:
   - changeSet:
-      id: test
-      author: test
+      id: table-users
+      author: joalvarez
       runOnChange: true
       changes:
         - sqlFile:
-            path: ddl/01-test.sql
+            path: ddl/01-users.sql
             relativeToChangelogFile: true
             endDelimiter: ;
   - changeSet:
-      id: test
-      author: test
+      id: table-roles
+      author: joalvarez
       runOnChange: true
       changes:
         - sqlFile:
-            path: dml/01-test.sql
+            path: ddl/02-roles.sql
+            relativeToChangeLogFile: true
+            endDelimiter: ;
+  - changeSet:
+      id: table-users-roles
+      author: joalvarez
+      runOnChange: true
+      changes:
+        - sqlFile:
+            path: ddl/03-user_roles.sql
+            relativeToChangeLogFile: true
+            endDelimiter: ;
+  - changeSet:
+      id: registers-roles
+      author: joalvarez
+      runOnChange: true
+      changes:
+        - sqlFile:
+            path: dml/01-roles.sql
             relativeToChangeLogFile: true
             endDelimiter: ;
